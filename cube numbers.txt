@@ -1,0 +1,16 @@
+package practice;
+
+import java.util.Scanner;
+
+public class cubenumbers {
+	public static void main(String[]args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("ENTER THE NUMBER:");
+		int num=scan.nextInt();
+		
+		for(int i=1;i<=num;i++) {
+			System.out.println(i+"."+"Number is :"+i+"and cube of "+i+" is :"+i*i*i);
+		}
+	}
+
+}

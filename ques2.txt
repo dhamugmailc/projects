@@ -1,0 +1,65 @@
+1. What will be the output of the following code?*
+
+public class Myclass{
+
+static int a = 20;
+
+Myclass() {
+
+a = 200;
+}
+
+public static void main(String[] args) {
+
+new Myclass();
+
+System.out.println(a);
+}
+}
+
+2.In which part of memory static variables are stored? 
+3.Is it possible to access instance members from a static method?
+4.Is it possible to override static methods of a class?
+5. How static block is different from an instance block in java?
+
+
+6.package interviewquestions;
+
+public class First_C {
+	public void myMethod()   
+    {  
+    System.out.println("Method");  
+    }  
+      
+    {  
+    System.out.println("Instance Block");  
+    }  
+          
+    public void First_C()  
+    {  
+    System.out.println("Constructor ");  
+    }  
+    static {  
+        System.out.println("static block");  
+    }  
+    public static void main(String[] args) {  
+    First_C c = new First_C();  
+    c.First_C();  
+    c.myMethod();  
+  }
+}
+
+7.
+8. What are the characteristics of an object in Java?
+9. Why is an object called an instance of a class?
+10. What is the meaning of creating an object in Java?
+11. Where the address of an object is stored in the memory?
+12. What is new in Java?
+13. 
+14. Define concrete class in Java.
+15.
+16. Which is the smallest integer data type?
+17. What is the default value of short?
+18.
+19. What are the default memory size and default value of float data type?
+20. What is the default memory size and default value for boolean data type in Java?

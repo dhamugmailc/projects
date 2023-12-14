@@ -1,0 +1,24 @@
+package cr;
+import java.sql.*;
+public class A {
+	
+public static void main(String[] args) {
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection c=DriverManager.getConnection("jdbc:mysql://localhost:3306/website","root","Dhamusql");
+			Statement s=c.createStatement();
+			
+			ResultSet r=s.executeQuery("select*from student");
+			while(r.next()) {
+			System.out.println(r.getInt(1)+" "+r.getString(2)+" "+r.getString(3)+" "+r.getInt(4));
+			}c.close();
+			
+		}catch(Exception e) {
+			System.out.println(e.toString());
+		}
+
+		}
+
+	}
+
+

@@ -1,0 +1,57 @@
+public class StringMethodsDemo {
+    public static void main(String[] args) {
+        // Sample string
+        String sampleString = "Hello, World!";
+
+        // 1. length() method - Get the length of the string
+        int length = sampleString.length();
+        System.out.println("Length of the string: " + length);
+
+        // 2. charAt() method - Get a character at a specific index
+        char characterAtIndex = sampleString.charAt(7);
+        System.out.println("Character at index 7: " + characterAtIndex);
+
+        // 3. substring() method - Get a substring of the string
+        String substring = sampleString.substring(7, 12);
+        System.out.println("Substring from index 7 to 12: " + substring);
+
+        // 4. indexOf() method - Find the index of a character or substring
+        int indexOfComma = sampleString.indexOf(",");
+        System.out.println("Index of ',' character: " + indexOfComma);
+
+        // 5. contains() method - Check if the string contains a specific substring
+        boolean containsWorld = sampleString.contains("World");
+        System.out.println("Contains 'World': " + containsWorld);
+
+        // 6. startsWith() and endsWith() methods - Check if the string starts or ends with a specific prefix/suffix
+        boolean startsWithHello = sampleString.startsWith("Hello");
+        boolean endsWithExclamation = sampleString.endsWith("!");
+        System.out.println("Starts with 'Hello': " + startsWithHello);
+        System.out.println("Ends with '!': " + endsWithExclamation);
+
+        // 7. toUpperCase() and toLowerCase() methods - Convert the string to uppercase or lowercase
+        String upperCaseString = sampleString.toUpperCase();
+        String lowerCaseString = sampleString.toLowerCase();
+        System.out.println("Uppercase: " + upperCaseString);
+        System.out.println("Lowercase: " + lowerCaseString);
+
+        // 8. replace() method - Replace characters or substrings within the string
+        String replacedString = sampleString.replace("World", "Java");
+        System.out.println("After replacing 'World' with 'Java': " + replacedString);
+
+        // 9. trim() method - Remove leading and trailing whitespace
+        String stringWithWhitespace = "   Trim me   ";
+        String trimmedString = stringWithWhitespace.trim();
+        System.out.println("Original string with whitespace: \"" + stringWithWhitespace + "\"");
+        System.out.println("Trimmed string: \"" + trimmedString + "\"");
+
+        // 10. split() method - Split the string into an array of substrings based on a delimiter
+        String sentence = "This is a sample sentence.";
+        String[] words = sentence.split(" ");
+        System.out.println("Words in the sentence:");
+        for (String word : words) {
+            System.out.println(word);
+        }
+    }
+}
+

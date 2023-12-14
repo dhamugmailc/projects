@@ -1,0 +1,28 @@
+1.Can we declare an abstract method as private
+2.Which is the least restrictive access modifier in Java?
+
+3.What is a symbolic operator in Java? What are the types of operators based on symbolsv
+4.public class Test {
+
+public static void main(String[] args)
+
+{
+
+  int x, y, z;
+
+  1 = x;
+
+  y = z = 2;
+
+ 
+
+  int a = x + y + z;
+
+  System.out.println(x + " " + y + " " + z);
+
+  }
+
+}
+
+
+5.Can we achieve abstraction without encapsulation in Java

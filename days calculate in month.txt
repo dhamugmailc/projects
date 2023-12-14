@@ -1,0 +1,33 @@
+package practice;
+
+import java.util.Scanner;
+
+public class daysinmonth {
+	public static void main(String args[]) {
+	Scanner r=new Scanner(System.in);
+	System.out.println("ENTER THE YEAR :");
+	int year=r.nextInt();
+	
+  System.out.println("Enter the month:");
+	 String month=r.next();
+	 int days=0;
+
+ switch(month){
+ case "1","3","5","7","8","10","12":
+    days =31;
+    break;
+ case "2":
+	 days =29;
+	 break;
+ case"4","6","9","11":	 
+     days=30;
+	 break;
+ 
+ 
+ }
+System.out.println(days);
+	
+}
+
+
+}

@@ -1,0 +1,48 @@
+package example;
+
+import java.util.Scanner;
+
+public class Scannerdemo {
+	public static void main(String[] args) {
+	Scanner r = new Scanner(System.in);
+	
+	
+	
+	System.out.println("ENTER mark ac:");
+	 int ac =r.nextInt();
+	 
+	System.out.println("ENTER mark mat:");
+	 int mat =r.nextInt();
+	 
+	System.out.println("ENTER mark mac:");
+     int mac =r.nextInt();
+     
+	System.out.println("ENTER mark ca:");
+     int ca =r.nextInt();
+     
+	System.out.println("ENTER mark com:");
+     int com =r.nextInt();
+     
+	  int totalmarks=ac+mat+mac+ca+com;
+	 
+	System.out.println("total marks :"+totalmarks);
+	
+	 int percentage =totalmarks/5;
+	System.out.println("percentage:"+percentage);
+
+	
+	
+	
+	
+	
+		
+		
+		
+		
+	
+		
+	}
+
+		
+
+}
